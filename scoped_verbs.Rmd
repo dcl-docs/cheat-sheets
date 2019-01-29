@@ -52,7 +52,7 @@ examples %>%
   slice(-n()) %>% 
   select(-example_type) %>% 
   mutate_all(str_replace_na, " ") %>% 
-  rename_all(funs(str_to_title(.) %>% str_replace("_", " "))) %>% 
+  rename_all(~(str_to_title(.) %>% str_replace("_", " "))) %>% 
   kable(format = "markdown") #have to specify otherwise doesn't handle empty rows well
 ```
 
