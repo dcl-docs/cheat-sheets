@@ -1,2 +1,1 @@
-# cheat-sheets
-DCL cheat sheets
+# Data Challenge Lab cheat sheets
